@@ -1,0 +1,9 @@
+@import './reset.css';
+@import './typography.css';
+@import './darkMode.css';
+@import './mouse.css';
+@import './ai.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

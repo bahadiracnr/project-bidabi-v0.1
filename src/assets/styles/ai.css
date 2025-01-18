@@ -1,0 +1,21 @@
+/* Responsive Design (responsive.css) */
+@media (max-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .mobile-menu.active {
+    display: block;
+  }
+}
+
+@keyframes checkmark {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

@@ -1,0 +1,52 @@
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode (dark-mode.css) */
+:root {
+  color-scheme: light;
+}
+
+:root.dark {
+  color-scheme: dark;
+}
+
+.dark {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.dark body {
+  background-color: #111827;
+  color: #f3f4f6;
+}
+
+.dark .bg-white {
+  background-color: #1f2937;
+}
+
+.dark .text-gray-900 {
+  color: #f3f4f6;
+}
+
+.dark .text-gray-600 {
+  color: #9ca3af;
+}
+
+.dark .border-gray-200 {
+  border-color: #374151;
+}
+
+.dark ::-webkit-scrollbar {
+  background-color: #1f2937;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+}

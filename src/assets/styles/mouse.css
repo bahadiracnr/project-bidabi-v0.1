@@ -1,0 +1,92 @@
+/* Custom Cursor (cursor.css) */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background: rgba(147, 51, 234, 0.3);
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition:
+    width 0.3s,
+    height 0.3s,
+    background 0.3s;
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(4px);
+}
+
+.cursor-expanded {
+  width: 50px;
+  height: 50px;
+  background: rgba(147, 51, 234, 0.2);
+}
+
+.gradient-follower {
+  position: fixed;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(
+    circle,
+    rgba(147, 51, 234, 0.15) 0%,
+    transparent 50%
+  );
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+/* Hover Effects (hover-effects.css) */
+.element-hovered {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Tilt Card Effect (tilt-card.css) */
+.tilt-card {
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+/* Smooth Scroll (smooth-scroll.css) */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Parallax (parallax.css) */
+.parallax {
+  transition: transform 0.2s cubic-bezier(0.2, 0.49, 0.32, 0.99);
+}
+
+/* Gradient Animations (gradient.css) */
+@keyframes gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.gradient-animate {
+  background: linear-gradient(45deg, #a855f7, #d946ef);
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* Custom Radio Selector (radio.css) */
+.peer:checked + label {
+  border-color: #9333ea;
+  box-shadow: 0 0 0 1px #9333ea;
+}
+
+label:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.peer:checked + label .absolute {
+  animation: checkmark 0.2s ease-in-out;
+}
