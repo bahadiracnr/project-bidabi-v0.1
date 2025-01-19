@@ -5,7 +5,7 @@ const Login = () => {
     <>
       <Header />
       <div>
-        <div className="flex-1 flex items-center justify-center px-4 py-12 relative bg-purple-50/100 relative min-h-screen flex items-center pt-16 overflow-hidden">
+        <div className="flex-1 flex items-center justify-center px-4 py-12 relative bg-purple-50/100 min-h-screen   pt-16 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-purple-50 to-pink-50 dark:from-gray-800 dark:to-gray-900 -z-10"></div>
           <div className="absolute inset-0 bg-[url('/images/grid-pattern.svg')] opacity-[0.2] dark:opacity-[0.1] -z-10"></div>
 
