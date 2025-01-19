@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [darkMode, setDarkMode] = useState(false);
@@ -29,18 +30,19 @@ function Header() {
             </div>
 
             <div className="hidden md:flex items-center space-x-8">
-              <a
-                href="./pages/projects.html"
-                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+              <Link
+                to="/"
+                className="text-gray-700 dark:text-gray-300 hover:text-purple-600"
               >
                 Projeler
-              </a>
-              <a
-                href="./pages/login.html"
-                className="text-gray-700 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+              </Link>
+
+              <Link
+                to="/login" // bu path Routes.jsx'teki path ile tam olarak eşleşmeli
+                className="text-gray-700 dark:text-gray-300 hover:text-purple-600"
               >
                 Giriş Yap
-              </a>
+              </Link>
               <a
                 href="./pages/register.html"
                 className="bg-gradient-to-r from-purple-500 to-blue-400 text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity"
